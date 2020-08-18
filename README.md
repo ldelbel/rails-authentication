@@ -1,1 +1,1 @@
-# members-only
+# rails-authentication
