@@ -1,20 +1,20 @@
 # Project 2: Members Only
 
-[![View Code](https://img.shields.io/badge/View%20-Code-green)]()
-[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)]()
+[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/ldelbel/rails-authentication)
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/ldelbel/rails-authentication/issues)
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
 
 <br />
 <p align="center">
   <h3 align="center"><h3>
   <p align="center">
-    <a href="https://github.com/ElijahTobs/Micro-Reddit/"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ldelbel/rails-authentication"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     -
-    <a href="https://github.com/ElijahTobs/Micro-Reddit/issues">Report Bug</a>
+    <a href="https://github.com/ldelbel/rails-authentication/issues">Report Bug</a>
     -
-    <a href="https://github.com/ElijahTobs/Micro-Reddit/pulls">Request Feature</a>
+    <a href="">Request Feature</a>
     -
   </p>
 </p>
@@ -65,7 +65,7 @@ $ rails db:migrate
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ElijahTobs/Micro-Reddit/issues).
+Feel free to check the [issues page](https://github.com/ldelbel/rails-authentication/issues).
 
 ## 👍 Show your support
 
