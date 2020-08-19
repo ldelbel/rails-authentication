@@ -1,8 +1,8 @@
-# Project 2: Members Only
+# Rails Authentication
 
 [![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/ldelbel/rails-authentication)
 [![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/ldelbel/rails-authentication/issues)
-[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/ldelbel/rails-forms/pulls)
 
 <br />
 <p align="center">
