@@ -1,5 +1,6 @@
 <h1> All Posts </h1>
 
+
 <div class= "posts">
   <% @posts.each do |post| %>
     <div class="post">
@@ -9,5 +10,10 @@
       <% end %>
       <p><%= post.body %></p>
     </div>
+
+    <% if @user.admin %>
+      <%= button_to "delete", post, :method => :delete %> 
+    <% end %>
   <% end %>
 </div>
+

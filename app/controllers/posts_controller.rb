@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   
   def index
     @posts = Post.all.order('created_at DESC')
-    @users = User.all
+    @user = current_user
   end
 
   def new
@@ -18,6 +18,13 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    flash.notice = "Post '#{@post.title}' deleted!"
+    redirect_to posts_path
   end
 
   private
