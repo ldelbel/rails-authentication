@@ -17,6 +17,10 @@
     <% if flash[:alert] %>
       <p class="alert"><%= alert %></p>
     <% end %>
+
+    <% if user_signed_in? %>
+      <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

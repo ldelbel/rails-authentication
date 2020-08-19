@@ -1,0 +1,15 @@
+<h1> All Posts </h1>
+
+<% current_user %>
+
+<div class= "posts">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h3><%= post.title %></h3>
+      <% if user_signed_in? %>
+      <h6 class="member"> by <%= @user.email %></h6>
+      <% end %>
+      <p><%= post.body %></p>
+    </div>
+  <% end %>
+</div>
