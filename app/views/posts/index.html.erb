@@ -1,5 +1,8 @@
 <h1> All Posts </h1>
 
+<% if user_signed_in? %>
+  <%= button_to 'Create Post', new_post_path, method: :get  %>
+<% end %>
 
 <div class= "posts">
   <% @posts.each do |post| %>
@@ -11,8 +14,8 @@
       <p><%= post.body %></p>
     </div>
 
-    <% if @user.admin %>
-      <%= button_to "delete", post, :method => :delete %> 
+    <% if @user && @user.admin %>
+      <%= button_to "delete", post, method: :delete %> 
     <% end %>
   <% end %>
 </div>

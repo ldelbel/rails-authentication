@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = current_user.posts.build
+    @post = Post.new
   end
 
   def create
@@ -15,6 +15,7 @@ class PostsController < ApplicationController
     @user = current_user
     if @post.save
       redirect_to posts_path
+      flash.notice = "New post created!"
     else
       render :new
     end
