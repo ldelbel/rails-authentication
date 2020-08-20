@@ -15,7 +15,7 @@ class PostsController < ApplicationController
     @user = current_user
     if @post.save
       redirect_to posts_path
-      flash.notice = "New post created!"
+      flash.notice = 'New post created!'
     else
       render :new
     end
