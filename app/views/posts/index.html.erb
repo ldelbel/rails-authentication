@@ -1,0 +1,22 @@
+<h1> All Posts </h1>
+
+<% if user_signed_in? %>
+  <%= button_to 'Create Post', new_post_path, method: :get  %>
+<% end %>
+
+<div class= "posts">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h3><%= post.title %></h3>
+      <% if user_signed_in? %>
+      <h6 class="member"> by <%= post.user.name %></h6>
+      <% end %>
+      <p><%= post.body %></p>
+    </div>
+
+    <% if @user && @user.admin %>
+      <%= button_to "delete", post, method: :delete %> 
+    <% end %>
+  <% end %>
+</div>
+

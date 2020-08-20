@@ -1,0 +1,5 @@
+<%= form_for @post do |f| %>
+  Title: <br> <%= f.text_field :title, value: 'Your Title' %><br>
+  Body: <br> <%= f.text_area :body, value: 'Your post here' %>
+  <br><%= f.submit value: 'Submit' %>
+<% end %>

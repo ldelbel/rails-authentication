@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <nav  style="background-color: #e3e3e3;">
+      <div style="display:flex;justify-content: space-between; width: 40%;"> 
+        <div>
+          <%= member?(user_signed_in?) %>
+        </div>
+        <div>
+          <%= link_to 'Home', posts_path, method: :get %>
+        </div>
+      </div> 
+    </nav>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= yield %>
   </body>
 </html>
